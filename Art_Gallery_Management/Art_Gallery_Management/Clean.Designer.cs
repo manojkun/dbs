@@ -111,6 +111,7 @@
             this.label9.Size = new System.Drawing.Size(33, 31);
             this.label9.TabIndex = 42;
             this.label9.Text = "X";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Clean
             // 

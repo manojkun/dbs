@@ -37,6 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -102,6 +103,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(36)))), ((int)(((byte)(72)))));
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -121,7 +123,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(389, 377);
+            this.button1.Location = new System.Drawing.Point(376, 377);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 33);
             this.button1.TabIndex = 19;
@@ -137,6 +139,17 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 33);
             this.label1.TabIndex = 20;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(57, 439);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(118, 39);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "LogOut";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Profile
             // 
@@ -173,6 +186,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
 
     }
 }

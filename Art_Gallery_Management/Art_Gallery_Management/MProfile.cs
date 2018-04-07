@@ -57,14 +57,17 @@ namespace Art_Gallery_Management
             dt = new DataTable();
             da.Fill(dt);
             int t = dt.Rows.Count;
-            if (t >= 1)
+            String name = textBox1.Text;
+            if (t == 1)
             {
-                    Form lg = new Paint(id);
+                    Form lg = new Paint(id,name);
+                    this.Close();
                     lg.Show();
             }
             else
             {
-                Form artin = new Artist(id);
+                Form artin = new Artist(id,name);
+                this.Close();
                 artin.Show();
             }
         }
@@ -78,6 +81,20 @@ namespace Art_Gallery_Management
         {
             Form cl = new Clean(id);
             cl.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form f2 = new Form1();
+            this.Close();
+            f2.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form f3 = new Stats(id);
+            this.Close();
+            f3.Show();
         }
     }
 }

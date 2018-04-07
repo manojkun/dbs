@@ -56,5 +56,17 @@ namespace Art_Gallery_Management
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form k2 = new Form1();
+            this.Close();
+            k2.Show();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

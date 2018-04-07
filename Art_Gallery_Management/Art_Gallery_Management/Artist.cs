@@ -20,12 +20,14 @@ namespace Art_Gallery_Management
         DataSet ds;
         DataTable dt;
         DataRow dr;
-        String id;
+        String id,name;
 
-        public Artist(String M_id)
+        public Artist(String M_id,String A_name)
         {
             InitializeComponent();
             id = M_id;
+            name = A_name;
+            textBox2.Text = name;
         }
 
         public void db_connect()
@@ -48,10 +50,10 @@ namespace Art_Gallery_Management
             cum.CommandText = "insert into Artist (Artist_name,Nationality) values('" + textBox2.Text + "','" + textBox3.Text + "')";
             cum.CommandType = CommandType.Text;
             cum.ExecuteNonQuery();
-            MessageBox.Show("Artist Inserted Into DB!!");
+            MessageBox.Show("Artist Added!!");
             conn.Close();
             this.Hide();
-            Form pf = new Paint(id);
+            Form pf = new Paint(id,name);
             pf.Show();
         }
     }

@@ -50,6 +50,7 @@ namespace Art_Gallery_Management
                 if (dr == DialogResult.OK)
                 {
                     Form lg = new MProfile(textBox1.Text);
+                    this.Close();
                     lg.Show();
                 }
             }
@@ -64,6 +65,13 @@ namespace Art_Gallery_Management
         private void label9_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form b3 = new Form1();
+            this.Close();
+            b3.Show();
         }
     }
 }

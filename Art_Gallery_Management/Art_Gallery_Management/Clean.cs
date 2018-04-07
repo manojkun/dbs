@@ -49,5 +49,10 @@ namespace Art_Gallery_Management
             Form pf = new MProfile(id);
             pf.Show();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

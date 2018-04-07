@@ -18,3 +18,4 @@ c:\users\manoj\documents\visual studio 2012\Projects\Art_Gallery_Management\Art_
 c:\users\manoj\documents\visual studio 2012\Projects\Art_Gallery_Management\Art_Gallery_Management\obj\Debug\Art_Gallery_Management.Paint.resources
 c:\users\manoj\documents\visual studio 2012\Projects\Art_Gallery_Management\Art_Gallery_Management\obj\Debug\Art_Gallery_Management.Clean.resources
 c:\users\manoj\documents\visual studio 2012\Projects\Art_Gallery_Management\Art_Gallery_Management\obj\Debug\Art_Gallery_Management.Profile.resources
+c:\users\manoj\documents\visual studio 2012\Projects\Art_Gallery_Management\Art_Gallery_Management\obj\Debug\Art_Gallery_Management.Stats.resources

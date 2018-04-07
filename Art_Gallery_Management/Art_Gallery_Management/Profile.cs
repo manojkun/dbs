@@ -51,13 +51,6 @@ namespace Art_Gallery_Management
             comboBox1.DisplayMember = "P_id";
             listBox1.DataSource = dt.DefaultView;
             listBox1.DisplayMember = "P_id";
-
-
-            
-
-
-
-
             conn.Close();
         }
 
@@ -172,9 +165,23 @@ namespace Art_Gallery_Management
             cum.Connection = conn;
             cum.CommandText = "insert into likes values('" + id + "','" + pid + "')";
             cum.CommandType = CommandType.Text;
-            cum.ExecuteNonQuery();
+            try
+            {
+                cum.ExecuteNonQuery();
+            }
+            catch (OracleException oe)
+            {
+                MessageBox.Show("Already Liked The Image");
+            }
             likes(pid);
             conn.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form f1 = new Form1();
+            this.Close();
+            f1.Show();
         }
         
     }
